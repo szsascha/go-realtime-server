@@ -19,6 +19,15 @@ I made the realtime server part of the project modular so I could also use it fo
 
 Once the server has started, just send websocket requests to `localhost:8080/ws` with your defined messages.
 
+For example:
+```
+{
+    "type": "echo",
+    "body": "test echo message"
+}
+```
+
+The implemented messages should be defined in the echo/message/message.go map of MessageTypes with the reference to their struct.
 
 ## Functionality
 
